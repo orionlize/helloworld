@@ -6,8 +6,8 @@ github.com/speps/go-hashids v1.0.0 h1:jdFC07PrExRM4Og5Ev4411Tox75aFpkC77NlmutadN
 github.com/speps/go-hashids v1.0.0/go.mod h1:P7hqPzMdnZOfyIk+xrlG1QaSMw+gCBdHKsBDnhpaZvc=
 github.com/zq2820/gopherjs v0.0.0-20220725104519-a7e7212f76d4 h1:n/cYEOklDZ1n0N+pCdAMLmaiB8pEl6WSG0LYCOTfero=
 github.com/zq2820/gopherjs v0.0.0-20220725104519-a7e7212f76d4/go.mod h1:+vhXAMhY/wugWs2Dak/4SdSwMIB5Qscdt3Pqzag7vXE=
-github.com/zq2820/x v0.0.0-20220726023205-a39613359b0f h1:J+m7MjmxZw1gMpVa4M/VJChMNx3iud78oTs0psiv5/M=
-github.com/zq2820/x v0.0.0-20220726023205-a39613359b0f/go.mod h1:MTDj/C1J6m7RE8Sbe7kITEWhsGCmEx47Fek4L8UPkso=
+github.com/zq2820/x v0.0.0-20220726024022-82edf5f18185 h1:nXsRyOxiYuDhXkqwDdTPjVMe2pWpolPn5Xf29veHuSo=
+github.com/zq2820/x v0.0.0-20220726024022-82edf5f18185/go.mod h1:MTDj/C1J6m7RE8Sbe7kITEWhsGCmEx47Fek4L8UPkso=
 honnef.co/go/js/console v0.0.0-20150119023344-105276c43558 h1:h/U4Bu3p/OB5OvK6+7cXA1oleuDeFzZOTHuwZjMT36A=
 honnef.co/go/js/console v0.0.0-20150119023344-105276c43558/go.mod h1:K5NtVTubnQQDVBcHCysv3MwAde+idPmWBeXxpHczwcU=
 honnef.co/go/js/dom v0.0.0-20210725211120-f030747120f2 h1:oomkgU6VaQDsV6qZby2uz1Lap0eXmku8+2em3A/l700=
