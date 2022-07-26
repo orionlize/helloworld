@@ -42,7 +42,6 @@ func (context *clickEvent) OnClick(e *react.SyntheticMouseEvent) {
 }
 
 func (a AppDef) Render() react.Element {
-	react.
 	props := a.Props().(*AppProps)
 
 	return react.Div(&react.DivProps{ClassName: styles("App")},
