@@ -15,8 +15,6 @@ require (
 	myitcv.io v0.0.0-20201125173645-a7167afc9e13
 )
 
-require github.com/speps/go-hashids v1.0.0 // indirect
-
-replace github.com/gopherjs/gopherjs v1.17.2 => github.com/zq2820/gopherjs v0.0.0-20220725104519-a7e7212f76d4
+replace github.com/gopherjs/gopherjs v1.17.2 => github.com/zq2820/gopherjs v0.0.0-20220728013123-3bbcf8563049
 
 replace myitcv.io v0.0.0-20201125173645-a7167afc9e13 => github.com/zq2820/x v0.0.0-20220726024022-82edf5f18185
