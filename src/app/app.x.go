@@ -3,15 +3,15 @@
 package app
 
 import (
-	"github.com/gopherjs/gopherjs/chunks"
+	"github.com/gopherjs/gopherjs/es"
 	"github.com/gopherjs/gopherjs/js"
 	"honnef.co/go/js/console"
 	"myitcv.io/react"
 )
 
-var styles = chunks.Import("./app.module.scss")
-var reactIcon = chunks.Import("../assets/logo.svg")
-var goIcon = chunks.Import("../assets/3b87e950352ac65c5eb643ddf9f2b21192138ae8.png")
+var styles = es.Import("./app.module.scss")
+var reactIcon = es.Import("../assets/logo.svg")
+var goIcon = es.Import("../assets/3b87e950352ac65c5eb643ddf9f2b21192138ae8.png")
 
 type AppDef struct {
 	react.ComponentDef
