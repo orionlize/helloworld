@@ -2,6 +2,8 @@ github.com/gopherjs/jsbuiltin v0.0.0-20180426082241-50091555e127 h1:atBEgNR1C5+L
 github.com/gopherjs/jsbuiltin v0.0.0-20180426082241-50091555e127/go.mod h1:7X1acUyFRf+oVFTU6SWw9mnb57Vxn+Nbh8iPbKg95hs=
 github.com/jinzhu/copier v0.3.5 h1:GlvfUwHk62RokgqVNvYsku0TATCF7bAHVwEXoBh3iJg=
 github.com/jinzhu/copier v0.3.5/go.mod h1:DfbEm0FYsaqBcKcFuvmOZb218JkPGtvSHsKg8S8hyyg=
+github.com/speps/go-hashids v1.0.0 h1:jdFC07PrExRM4Og5Ev4411Tox75aFpkC77NlmutadNI=
+github.com/speps/go-hashids v1.0.0/go.mod h1:P7hqPzMdnZOfyIk+xrlG1QaSMw+gCBdHKsBDnhpaZvc=
 github.com/zq2820/gopherjs v0.0.0-20220728013123-3bbcf8563049 h1:WJHP2NduLERoNpijKfGGud1XE3kxNVNl6JMpR7iN4eA=
 github.com/zq2820/gopherjs v0.0.0-20220728013123-3bbcf8563049/go.mod h1:+vhXAMhY/wugWs2Dak/4SdSwMIB5Qscdt3Pqzag7vXE=
 github.com/zq2820/x v0.0.0-20220726024022-82edf5f18185 h1:nXsRyOxiYuDhXkqwDdTPjVMe2pWpolPn5Xf29veHuSo=
