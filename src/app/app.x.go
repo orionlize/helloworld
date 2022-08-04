@@ -5,6 +5,8 @@ package app
 import (
 	"github.com/gopherjs/gopherjs/es"
 	"github.com/gopherjs/gopherjs/js"
+	"github.com/zq2820/helloworld/src/fun"
+	"github.com/zq2820/helloworld/src/utils"
 	"honnef.co/go/js/console"
 	"myitcv.io/react"
 )
@@ -12,6 +14,10 @@ import (
 var styles = es.Import("./app.module.scss")
 var reactIcon = es.Import("../assets/logo.svg")
 var goIcon = es.Import("../assets/3b87e950352ac65c5eb643ddf9f2b21192138ae8.png")
+
+var input = es.ImportNodeModule("antd", "Input", es.ImportOptions{
+	Method: es.NOT_DEFAULT,
+})
 
 type AppDef struct {
 	react.ComponentDef
@@ -32,13 +38,26 @@ type RRef struct {
 }
 
 func (a AppDef) ComponentDidMount() {
-	console.Error("测试error")
+	utils.NewPromise(func(resolve, reject func(interface{})) {
+		resolve(input)
+	}).Then(func(data *js.Object) {
+		console.Error("测试error", data)
+	})
 }
 
 type clickEvent struct{}
 
 func (context *clickEvent) OnClick(e *react.SyntheticMouseEvent) {
-	js.Global.Call("open", "https://zh.m.wikipedia.org/zh/Go")
+	// js.Global.Call("open", "https://zh.m.wikipedia.org/zh/Go")
+	utils.Axios.Get(
+		"https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=43656176&appsecret=I42og6Lm&ext=&cityid=&city=",
+	).Then(func(data *js.Object) {
+		js.Global.Call("alert", js.Global.Get("JSON").Call("stringify", data.Get("data")))
+		console.Log(data.Get("data"))
+		panic("network error")
+	}).Catch(func(err *js.Object) {
+		console.Error(err)
+	})
 }
 
 func (a AppDef) Render() react.Element {
@@ -70,6 +89,10 @@ func (a AppDef) Render() react.Element {
 				OnClick:   &clickEvent{},
 			}),
 			react.Fragment(a.Children()...),
+			react.CreateElement(
+				&fun.FunDef{},
+				&fun.FunProps{Text: "FC"},
+			),
 		),
 	)
 }

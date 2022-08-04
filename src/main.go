@@ -5,7 +5,6 @@ package main
 import (
 	_ "github.com/jinzhu/copier"
 	"github.com/zq2820/helloworld/src/app"
-	"github.com/zq2820/helloworld/src/fun"
 	"honnef.co/go/js/dom"
 	"myitcv.io/react"
 )
@@ -21,9 +20,5 @@ func main() {
 		react.CreateElement(
 			&app.AppDef{},
 			&app.AppProps{Text: "Learn Go React"},
-			react.CreateElement(
-				&fun.FunDef{},
-				&fun.FunProps{Text: "FC"},
-			),
 		), domTarget)
 }
