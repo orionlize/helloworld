@@ -1,0 +1,37 @@
+package fun
+
+import (
+	"myitcv.io/react"
+)
+
+type FunProps struct {
+	react.Props
+	Text string
+}
+
+func (p FunProps) EqualsIntf(v react.Props) bool {
+	return false
+}
+
+type Click struct {
+	OnClickCallBack func()
+}
+
+func (a *Click) OnClick(e *react.SyntheticMouseEvent) {
+	a.OnClickCallBack()
+}
+
+func Default(props *FunProps, children ...react.Element) react.Element {
+	state, setState := react.UseState(100111)
+
+	return <Div
+		OnClick={&Click{
+			OnClickCallBack: func() {
+				setState.Invoke(state.Int() + 1)
+			},
+		}}
+	>
+		{props.Text+state.String()}
+		{children}
+	</Div>
+}

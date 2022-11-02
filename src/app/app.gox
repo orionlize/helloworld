@@ -20,7 +20,7 @@ var input = es.ImportNodeModule("antd", "Input", es.ImportOptions{
 })
 
 type AppDef struct {
-	react.ComponentDef
+	react.ComponentDef[AppProps]
 	Text string
 }
 
@@ -37,7 +37,7 @@ type RRef struct {
 	Name string
 }
 
-func (a AppDef) ComponentDidMount() {
+func (a *AppDef) ComponentDidMount() {
 	utils.NewPromise(func(resolve, reject func(interface{})) {
 		resolve(input)
 	}).Then(func(data *js.Object) {
@@ -60,39 +60,41 @@ func (context *clickEvent) OnClick(e *react.SyntheticMouseEvent) {
 	})
 }
 
-func (a AppDef) Render() react.Element {
-	props := a.Props().(*AppProps)
+func (a *AppDef) Render() react.Element {
+	props := a.Props()
 
-	return react.Div(&react.DivProps{ClassName: styles("App")},
-		react.Header(&react.HeaderProps{
-			ClassName: styles("App-header"),
-		},
-			react.Img(&react.ImgProps{
-				Src:       reactIcon(),
-				ClassName: styles("App-logo"),
-			}),
-			react.P(nil,
-				react.S("Edit "),
-				react.Code(nil, react.S("src/app.x.go")),
-				react.S(" and save to reload."),
-			),
-			react.A(
-				&react.AProps{
-					ClassName: styles("App-link"),
-					Href:      "https://reactjs.org",
-					Target:    "_blank",
-				}),
-			react.S(props.Text),
-			react.Img(&react.ImgProps{
-				ClassName: styles("App-go-logo"),
-				Src:       goIcon(),
-				OnClick:   &clickEvent{},
-			}),
-			react.Fragment(a.Children()...),
-			react.CreateElement(
-				&fun.FunDef{},
-				&fun.FunProps{Text: "FC"},
-			),
-		),
-	)
+	return <Div
+		ClassName={styles("App")}
+	>
+		<Header
+			ClassName={styles("App-header")}
+		>
+			<Img
+				Src={reactIcon()}
+				ClassName={styles("App-logo")}
+			/>
+			<P>
+				Edit
+				<Code>
+					src/app.gox
+				</Code>
+				 and save to reload.
+			</P>
+			<A
+				ClassName={styles("App-link")}
+				Href="https://reactjs.org"
+				Target="_blank"
+			/>
+			{props.Text}
+			<Img
+				ClassName={styles("App-go-logo")}
+				Src={goIcon()}
+				OnClick={&clickEvent{}}
+			/>
+			{a.Children()}
+			<fun.Default
+				Text="FC~~~"
+			/>
+		</Header>
+	</Div>
 }

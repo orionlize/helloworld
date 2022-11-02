@@ -7,8 +7,13 @@ module.exports = {
   },
   output: {
 		path: path.join(__dirname, '/dist'),
-    filename: 'prod.inc.js',
+    filename: (pathData) => {
+      return pathData.chunk.name === 'index' ? 'dev.inc.js' : 'vendors~index.dev.inc.js';
+    },
     libraryTarget: 'this',
+  },
+  cache: {
+    type: 'filesystem',
   },
   optimization: {
     splitChunks: {
