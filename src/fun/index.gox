@@ -21,6 +21,7 @@ func (a *Click) OnClick(e *react.SyntheticMouseEvent) {
 	a.OnClickCallBack()
 }
 
+// 测试函数组件
 func Default(props *FunProps, children ...react.Element) react.Element {
 	state, setState := react.UseState(100111)
 

@@ -10,6 +10,7 @@ import (
 var styles = es.Import("./app.module.scss")
 var reactIcon = es.Import("../assets/logo.svg")
 
+// 测试类组件
 type AppDef struct {
 	react.ComponentDef[AppProps]
 	Text string
