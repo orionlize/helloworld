@@ -28,6 +28,10 @@ func (props AppProps) EqualsIntf(v react.Props) bool {
 	return false
 }
 
+func (props appState) EqualsIntf(v react.State) bool {
+	return false
+}
+
 func (a *AppDef) Render() react.Element {
 	return <Div
 		ClassName={styles("App")}
