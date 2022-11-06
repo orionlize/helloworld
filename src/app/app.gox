@@ -12,12 +12,16 @@ var reactIcon = es.Import("../assets/logo.svg")
 
 // 测试类组件
 type AppDef struct {
-	react.ComponentDef[AppProps]
+	react.ComponentDef[AppProps, appState]
 	Text string
 }
 
 type AppProps struct {
 	react.Props
+}
+
+type appState struct {
+	react.State
 }
 
 func (props AppProps) EqualsIntf(v react.Props) bool {

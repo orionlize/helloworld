@@ -4,10 +4,7 @@ go 1.18
 
 require honnef.co/go/js/dom v0.0.0-20210725211120-f030747120f2
 
-require (
-	github.com/gopherjs/jsbuiltin v0.0.0-20180426082241-50091555e127 // indirect
-	github.com/jinzhu/copier v0.3.5
-)
+require github.com/jinzhu/copier v0.3.5
 
 require (
 	github.com/gopherjs/gopherjs v1.17.2
@@ -16,6 +13,6 @@ require (
 
 require github.com/speps/go-hashids v1.0.0 // indirect
 
-replace github.com/gopherjs/gopherjs v1.17.2 => github.com/zq2820/gopherjs v0.0.0-20221102093457-2cc2b2537d7e
+replace github.com/gopherjs/gopherjs v1.17.2 => github.com/zq2820/gopherjs v0.0.0-20221104165831-c02aa18a40cd
 
-replace myitcv.io v0.0.0-20201125173645-a7167afc9e13 => github.com/zq2820/x v0.0.0-20221102014035-a866e684ec84
+replace myitcv.io v0.0.0-20201125173645-a7167afc9e13 => github.com/zq2820/x v0.0.0-20221104170007-5c763fe678ad

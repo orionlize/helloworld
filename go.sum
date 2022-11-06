@@ -1,12 +1,10 @@
-github.com/gopherjs/jsbuiltin v0.0.0-20180426082241-50091555e127 h1:atBEgNR1C5+LFkl8ipQtLee9RStheS8YeCSkiYqBhOg=
-github.com/gopherjs/jsbuiltin v0.0.0-20180426082241-50091555e127/go.mod h1:7X1acUyFRf+oVFTU6SWw9mnb57Vxn+Nbh8iPbKg95hs=
 github.com/jinzhu/copier v0.3.5 h1:GlvfUwHk62RokgqVNvYsku0TATCF7bAHVwEXoBh3iJg=
 github.com/jinzhu/copier v0.3.5/go.mod h1:DfbEm0FYsaqBcKcFuvmOZb218JkPGtvSHsKg8S8hyyg=
 github.com/speps/go-hashids v1.0.0 h1:jdFC07PrExRM4Og5Ev4411Tox75aFpkC77NlmutadNI=
 github.com/speps/go-hashids v1.0.0/go.mod h1:P7hqPzMdnZOfyIk+xrlG1QaSMw+gCBdHKsBDnhpaZvc=
-github.com/zq2820/gopherjs v0.0.0-20221102093457-2cc2b2537d7e h1:oY5rLLfXTjMsYp+5+IsGRl+jgavIV6Ly2r5TH27SaQg=
-github.com/zq2820/gopherjs v0.0.0-20221102093457-2cc2b2537d7e/go.mod h1:AcH9h+9sBJyIJdaf6UEUDGoSXxtWIH/WDHU9n1Uve0o=
-github.com/zq2820/x v0.0.0-20221102014035-a866e684ec84 h1:Zz6rmpcbou+3TbzRyg+AbLOVvnbNeHY3ZHUW7tXK4EA=
-github.com/zq2820/x v0.0.0-20221102014035-a866e684ec84/go.mod h1:Bs8Hb1tT+kgQwRMRTn7ySNBlYdlO1fVV/lV443R2dWE=
+github.com/zq2820/gopherjs v0.0.0-20221104165831-c02aa18a40cd h1:Eq8V4ZBRNbM8jok00y57nYT8oj0ewxkORCm+ZPqqiY4=
+github.com/zq2820/gopherjs v0.0.0-20221104165831-c02aa18a40cd/go.mod h1:AcH9h+9sBJyIJdaf6UEUDGoSXxtWIH/WDHU9n1Uve0o=
+github.com/zq2820/x v0.0.0-20221104170007-5c763fe678ad h1:3JnkkNrMrlcaxDzLyyzo++JqdV0vm8qwIc6NiFrWf80=
+github.com/zq2820/x v0.0.0-20221104170007-5c763fe678ad/go.mod h1:Bs8Hb1tT+kgQwRMRTn7ySNBlYdlO1fVV/lV443R2dWE=
 honnef.co/go/js/dom v0.0.0-20210725211120-f030747120f2 h1:oomkgU6VaQDsV6qZby2uz1Lap0eXmku8+2em3A/l700=
 honnef.co/go/js/dom v0.0.0-20210725211120-f030747120f2/go.mod h1:sUMDUKNB2ZcVjt92UnLy3cdGs+wDAcrPdV3JP6sVgA4=
