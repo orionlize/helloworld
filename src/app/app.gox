@@ -46,7 +46,7 @@ func (a *AppDef) Render() react.Element {
 			<P>
 				Edit
 				<Code>
-					 src/app.gox
+					 src/app/app.gox
 				</Code>
 				 and save to reload.
 			</P>
