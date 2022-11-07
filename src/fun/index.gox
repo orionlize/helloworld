@@ -1,6 +1,8 @@
 package fun
 
 import (
+	"strconv"
+
 	"myitcv.io/react"
 )
 
@@ -28,11 +30,11 @@ func Default(props *FunProps, children ...react.Element) react.Element {
 	return <Div
 		OnClick={&Click{
 			OnClickCallBack: func() {
-				setState.Invoke(state.Int() + 1)
+				setState(state + 1)
 			},
 		}}
 	>
-		{props.Text+state.String()}
+		{props.Text+strconv.Itoa(state)}
 		{children}
 	</Div>
 }
