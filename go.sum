@@ -4,7 +4,7 @@ github.com/speps/go-hashids v1.0.0 h1:jdFC07PrExRM4Og5Ev4411Tox75aFpkC77NlmutadN
 github.com/speps/go-hashids v1.0.0/go.mod h1:P7hqPzMdnZOfyIk+xrlG1QaSMw+gCBdHKsBDnhpaZvc=
 github.com/zq2820/gopherjs v0.0.0-20221104165831-c02aa18a40cd h1:Eq8V4ZBRNbM8jok00y57nYT8oj0ewxkORCm+ZPqqiY4=
 github.com/zq2820/gopherjs v0.0.0-20221104165831-c02aa18a40cd/go.mod h1:AcH9h+9sBJyIJdaf6UEUDGoSXxtWIH/WDHU9n1Uve0o=
-github.com/zq2820/x v0.0.0-20221128084936-b431276eb5ea h1:bnwXE6ZRjnjKmA8K+kmA/GYA9UU74fULKS9M2uUa2Ec=
-github.com/zq2820/x v0.0.0-20221128084936-b431276eb5ea/go.mod h1:Bs8Hb1tT+kgQwRMRTn7ySNBlYdlO1fVV/lV443R2dWE=
+github.com/zq2820/x v0.0.0-20221128102857-0d03fecbf7aa h1:yF5MHK1528ykw2GjwVid0t05AEtdoe9FHQEnVgZepD8=
+github.com/zq2820/x v0.0.0-20221128102857-0d03fecbf7aa/go.mod h1:Bs8Hb1tT+kgQwRMRTn7ySNBlYdlO1fVV/lV443R2dWE=
 honnef.co/go/js/dom v0.0.0-20210725211120-f030747120f2 h1:oomkgU6VaQDsV6qZby2uz1Lap0eXmku8+2em3A/l700=
 honnef.co/go/js/dom v0.0.0-20210725211120-f030747120f2/go.mod h1:sUMDUKNB2ZcVjt92UnLy3cdGs+wDAcrPdV3JP6sVgA4=
