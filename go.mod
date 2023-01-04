@@ -13,6 +13,6 @@ require (
 
 require github.com/speps/go-hashids v1.0.0 // indirect
 
-replace github.com/gopherjs/gopherjs v1.17.2 => github.com/zq2820/gopherjs v0.0.0-20221104165831-c02aa18a40cd
+replace github.com/gopherjs/gopherjs v1.17.2 => github.com/zq2820/gopherjs v0.0.0-20230104020929-3ac5b8cb2f51
 
-replace myitcv.io v0.0.0-20201125173645-a7167afc9e13 => github.com/zq2820/x v0.0.0-20221128102857-0d03fecbf7aa
+replace myitcv.io v0.0.0-20201125173645-a7167afc9e13 => github.com/zq2820/x v0.0.0-20230101123141-a93e207aab68
