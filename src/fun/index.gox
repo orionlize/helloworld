@@ -27,12 +27,12 @@ func (a *Click) OnClick(e *react.SyntheticMouseEvent) {
 func Default(props *FunProps, children ...react.Element) react.Element {
 	state, setState := react.UseState(100111)
 
+	onClickCallBack := func(e *react.SyntheticMouseEvent) {
+		setState(state + 1)
+	}
+
 	return <Div
-		OnClick={&Click{
-			OnClickCallBack: func() {
-				setState(state + 1)
-			},
-		}}
+		OnClick={onClickCallBack}
 	>
 		{props.Text+strconv.Itoa(state)}
 		{children}

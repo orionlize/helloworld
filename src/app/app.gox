@@ -4,6 +4,7 @@ package app
 
 import (
 	"github.com/gopherjs/gopherjs/es"
+	"github.com/zq2820/helloworld/src/fun"
 	"myitcv.io/react"
 )
 
@@ -57,6 +58,7 @@ func (a *AppDef) Render() react.Element {
 			>
 				Learn React
 			</A>
+			<fun.Default />
 		</Header>
 	</Div>
 }
